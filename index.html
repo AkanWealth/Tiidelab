@@ -14,34 +14,33 @@
             margin: 5px 20px;
             border-radius: 10px;
         }
-
+        
         .submit {
             background-color: slateblue;
             width: 85%;
             color: snow;
             font-size: 24px;
         }
-
+        
         input:focus {
             background-color: salmon;
             color: seashell;
             outline: none;
         }
-
+        
         h3 {
             color: slateblue;
             margin: 15px;
             font-size: 32px;
         }
-
+        
         .instruction,
         .form-container {
             float: left;
             width: 50%;
         }
-
+        
         @media screen and (max-width:800px) {
-
             .form-container,
             .instruction {
                 width: 100%;
@@ -59,7 +58,7 @@
          margin: 100px auto;">
 
         <div class="instruction">
-            <img src="learning.png" alt="Learning" srcset="" style="max-width:100%;">
+            <img src="form.jpg" alt="Learning" srcset="" style="max-width:100%;">
         </div>
 
         <div class="form-container">
@@ -71,8 +70,7 @@
                 <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
                 <input type="text" name="username" id="userName" placeholder="Enter your Username" required>
                 <input type="password" name="password" id="password" placeholder="Enter your Password" required>
-                <input type="password" name="cpassword" id="confirmPassword" placeholder="Enter your Password Again"
-                    required>
+                <input type="password" name="cpassword" id="confirmPassword" placeholder="Enter your Password Again" required>
 
                 <input type="submit" value="Sign Up" class="submit">
             </form>
@@ -82,8 +80,7 @@
         <div style="clear: left;"></div>
 
         <script>
-            
-            document.getElementById('SignupForm').addEventListener("submit", function (even) {
+            document.getElementById('SignupForm').addEventListener("submit", function(even) {
                 event.preventDefault();
             })
 
@@ -115,7 +112,7 @@
                         headers: {
                             'Content-Type': 'application/json' //data is sent as JSON object to server
                         }
-                    }).then(function (data) {
+                    }).then(function(data) {
                         alert('Congrats')
                     })
 
